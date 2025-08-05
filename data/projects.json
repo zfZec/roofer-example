@@ -1,0 +1,54 @@
+   {
+       "recentProjects": [
+           {
+               "title": "Modern Asphalt Shingle Roof",
+               "category": "Residential Installation",
+               "year": "2023",
+               "description": "Installed high-performance asphalt shingles for a suburban home, enhancing durability and curb appeal.",
+               "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+               "alt": "Modern Asphalt Shingle Roof"
+           },
+           {
+               "title": "Standing Seam Metal Roof",
+               "category": "Commercial Installation",
+               "year": "2023",
+               "description": "Designed and installed a sleek metal roof for a commercial building, ensuring long-term weather resistance.",
+               "image": "https://images.unsplash.com/photo-1600566752227-967f0b1df611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+               "alt": "Standing Seam Metal Roof"
+           },
+           {
+               "title": "Storm Damage Repair",
+               "category": "Residential Repair",
+               "year": "2023",
+               "description": "Restored a storm-damaged roof with precision, using premium materials to prevent future leaks.",
+               "image": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+               "alt": "Storm Damage Repair"
+           }
+       ],
+       "previousProjects": [
+           {
+               "title": "Clay Tile Roof Restoration",
+               "category": "Historic Home",
+               "year": "2021",
+               "description": "Restored a historic home's clay tile roof, preserving its architectural integrity with modern techniques.",
+               "image": "https://images.unsplash.com/photo-1600566753086-5b9d06e2695d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+               "alt": "Clay Tile Roof Restoration"
+           },
+           {
+               "title": "Flat Roof Installation",
+               "category": "Commercial Project",
+               "year": "2020",
+               "description": "Installed a durable flat roof system for a commercial property, optimized for energy efficiency.",
+               "image": "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+               "alt": "Flat Roof Installation"
+           },
+           {
+               "title": "Slate Roof Replacement",
+               "category": "Residential Project",
+               "year": "2019",
+               "description": "Replaced an aging slate roof with premium materials, ensuring longevity and aesthetic appeal.",
+               "image": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+               "alt": "Slate Roof Replacement"
+           }
+       ]
+   }
