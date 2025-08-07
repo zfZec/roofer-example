@@ -240,7 +240,7 @@
         }
 
         // Fetch projects from projects.json and populate grids
-        fetch('projects.json')
+        fetch('data/projects.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
