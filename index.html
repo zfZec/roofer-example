@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibex Roofing Solutions | Premium Roofing Services</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN with fallback to local -->
+    <script>
+        // Check if Tailwind CSS loads; if not, fall back to local copy
+        function loadTailwind() {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'css/tailwind.min.css';
+            document.head.appendChild(link);
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com" onerror="loadTailwind()"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,8 +50,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50">Home</a>
@@ -57,7 +65,7 @@
     <!-- Hero Section -->
     <section class="relative pt-20 pb-32 clip-path-hero gradient-bg overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470')] bg-cover bg-center"></div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
@@ -83,7 +91,7 @@
                 <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center animate-fade-in" style="animation-delay: 0.3s;">
                     <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md overflow-hidden">
                         <div class="relative h-96">
-                            <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Roofing professionals at work">
+                            <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Roofing professionals at work">
                             <div class="absolute inset-0 bg-blue-800 opacity-30"></div>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
@@ -147,11 +155,10 @@
                     From installation to repair, we provide complete roofing services with unmatched quality.
                 </p>
             </div>
-
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover-scale animate-fade-in" style="animation-delay: 0.1s;">
                     <div class="h-48 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Roof installation">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Roof installation">
                     </div>
                     <div class="p-6">
                         <div class="flex items-center">
@@ -171,10 +178,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover-scale animate-fade-in" style="animation-delay: 0.2s;">
                     <div class="h-48 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Roof repair">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Roof repair">
                     </div>
                     <div class="p-6">
                         <div class="flex items-center">
@@ -194,10 +200,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover-scale animate-fade-in" style="animation-delay: 0.3s;">
                     <div class="h-48 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600566752227-967f0b1df611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Roof maintenance">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600566752227-967f0b1df611?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Roof maintenance">
                     </div>
                     <div class="p-6">
                         <div class="flex items-center">
@@ -227,7 +232,7 @@
             <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
                 <div class="lg:col-span-6 mb-12 lg:mb-0 animate-fade-in">
                     <div class="relative rounded-xl overflow-hidden shadow-xl">
-                        <img class="w-full h-auto" src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Our roofing team">
+                        <img class="w-full h-auto" src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Our roofing team">
                         <div class="absolute -bottom-6 -right-6 bg-blue-600 w-32 h-32 rounded-full flex items-center justify-center text-white text-4xl animate-float">
                             <i class="fas fa-home"></i>
                         </div>
@@ -282,7 +287,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="py-20 bg-gray-50">
+    <section id="testimonials" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-fade-in">
                 <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">Testimonials</h2>
@@ -290,7 +295,6 @@
                     What Our Customers Say
                 </p>
             </div>
-
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-in" style="animation-delay: 0.1s;">
                     <div class="flex items-center mb-4">
@@ -300,19 +304,12 @@
                         <div class="ml-4">
                             <h3 class="text-lg font-medium text-gray-900">Sarah J.</h3>
                             <div class="flex text-yellow-400 mt-1">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">
-                        "Ibex Roofing replaced our entire roof after storm damage. The crew was professional, efficient, and cleaned up perfectly. Our new roof looks amazing!"
-                    </p>
+                    <p class="text-gray-600 italic">"Ibex Roofing replaced our entire roof after storm damage. The crew was professional, efficient, and cleaned up perfectly. Our new roof looks amazing!"</p>
                 </div>
-
                 <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-in" style="animation-delay: 0.2s;">
                     <div class="flex items-center mb-4">
                         <div class="flex-shrink-0">
@@ -321,19 +318,12 @@
                         <div class="ml-4">
                             <h3 class="text-lg font-medium text-gray-900">Michael T.</h3>
                             <div class="flex text-yellow-400 mt-1">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">
-                        "I've used Ibex for two homes now. Their attention to detail is unmatched. They caught potential issues others missed and saved me thousands in future repairs."
-                    </p>
+                    <p class="text-gray-600 italic">"I've used Ibex for two homes now. Their attention to detail is unmatched. They caught potential issues others missed and saved me thousands in future repairs."</p>
                 </div>
-
                 <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-in" style="animation-delay: 0.3s;">
                     <div class="flex items-center mb-4">
                         <div class="flex-shrink-0">
@@ -342,17 +332,11 @@
                         <div class="ml-4">
                             <h3 class="text-lg font-medium text-gray-900">Lisa M.</h3>
                             <div class="flex text-yellow-400 mt-1">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">
-                        "From estimate to completion, the process was seamless. The team was respectful of our property and completed the job ahead of schedule. Highly recommend!"
-                    </p>
+                    <p class="text-gray-600 italic">"From estimate to completion, the process was seamless. The team was respectful of our property and completed the job ahead of schedule. Highly recommend!"</p>
                 </div>
             </div>
         </div>
@@ -370,10 +354,9 @@
                     See examples of our craftsmanship and attention to detail.
                 </p>
             </div>
-
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="group relative rounded-xl overflow-hidden shadow-lg hover-scale animate-fade-in" style="animation-delay: 0.1s;">
-                    <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Residential roofing project">
+                    <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Residential roofing project">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-xl font-bold text-white">Modern Asphalt Shingle Roof</h3>
@@ -381,9 +364,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="group relative rounded-xl overflow-hidden shadow-lg hover-scale animate-fade-in" style="animation-delay: 0.2s;">
-                    <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600566752227-967f0b1df611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Metal roofing project">
+                    <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600566752227-967f0b1df611?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Metal roofing project">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-xl font-bold text-white">Standing Seam Metal Roof</h3>
@@ -391,9 +373,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="group relative rounded-xl overflow-hidden shadow-lg hover-scale animate-fade-in" style="animation-delay: 0.3s;">
-                    <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600566753086-5b9d06e2695d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fEVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tile roofing project">
+                    <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1600566753086-5b9d06e2695d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Tile roofing project">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-xl font-bold text-white">Clay Tile Roof Restoration</h3>
@@ -402,9 +383,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="mt-12 text-center animate-fade-in" style="animation-delay: 0.4s;">transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors">
-                <a href="projects.html" class="inline-flex items-center px-6 py-3 border border-
+            <div class="mt-12 text-center animate-fade-in" style="animation-delay: 0.4s;">
+                <a href="projects.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors">
                     View More Projects
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -466,7 +446,6 @@
                     We're here to answer your questions and provide expert roofing advice.
                 </p>
             </div>
-
             <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-in" style="animation-delay: 0.1s;">
                     <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 mb-6">
@@ -478,7 +457,6 @@
                         Cityville, ST 12345
                     </p>
                 </div>
-
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-in" style="animation-delay: 0.2s;">
                     <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 mb-6">
                         <i class="fas fa-phone-alt text-xl"></i>
@@ -489,7 +467,6 @@
                         Mon-Fri: 8am - 6pm
                     </p>
                 </div>
-
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-in" style="animation-delay: 0.3s;">
                     <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 mb-6">
                         <i class="fas fa-envelope text-xl"></i>
@@ -509,64 +486,50 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="animate-fade-in">
-                    <h3 class="text-2xl font-bold text-gradient">Ibex<span class="text-gray-300">Roofing</span></h3>
+                    <h3 class="text-2xl font-bold text-gradient">Ibex <span class="text-gray-300">Roofing</span></h3>
                     <p class="mt-4 text-gray-400">
                         Providing premium roofing solutions with integrity and craftsmanship since 2005.
                     </p>
                     <div class="mt-6 flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                        <a href="https://www.facebook.com" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-
                 <div class="animate-fade-in" style="animation-delay: 0.1s;">
                     <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Services</h3>
                     <ul class="mt-4 space-y-3">
                         <li><a href="services.html#new-roof-installation" class="text-gray-400 hover:text-white transition-colors">New Roof Installation</a></li>
                         <li><a href="services.html#roof-repairs" class="text-gray-400 hover:text-white transition-colors">Roof Repairs</a></li>
                         <li><a href="services.html#preventive-maintenance" class="text-gray-400 hover:text-white transition-colors">Preventive Maintenance</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Roof Inspections</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Emergency Services</a></li>
+                        <li><a href="services.html#roof-inspections" class="text-gray-400 hover:text-white transition-colors">Roof Inspections</a></li>
+                        <li><a href="services.html#emergency-services" class="text-gray-400 hover:text-white transition-colors">Emergency Services</a></li>
                     </ul>
                 </div>
-
                 <div class="animate-fade-in" style="animation-delay: 0.2s;">
                     <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Company</h3>
                     <ul class="mt-4 space-y-3">
                         <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
                         <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
                     </ul>
                 </div>
-
                 <div class="animate-fade-in" style="animation-delay: 0.3s;">
                     <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Legal</h3>
                     <ul class="mt-4 space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Licenses</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Warranty</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a></li>
+                        <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="licenses.html" class="text-gray-400 hover:text-white transition-colors">Licenses</a></li>
+                        <li><a href="warranty.html" class="text-gray-400 hover:text-white transition-colors">Warranty</a></li>
+                        <li><a href="sitemap.html" class="text-gray-400 hover:text-white transition-colors">Sitemap</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate-fade-in" style="animation-delay: 0.4s;">
-                <p class="text-gray-400 text-sm">
-                    &copy; 2025 Ibex Roofing Solutions. All rights reserved.
-                </p>
+                <p class="text-gray-400 text-sm">&copy; 2025 Ibex Roofing Solutions. All rights reserved.</p>
                 <div class="mt-4 md:mt-0 flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Accessibility</a>
                     <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
